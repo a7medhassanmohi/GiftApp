@@ -10,7 +10,7 @@ import ShoppingCart from './component/ahmed/shoppingcart/ShoppingCart';
 function App() {
   return (
     <div className="App">
-      {/* <ContactPage /> */}
+      <ContactPage />
       <ShoppingCart />
     </div>
   );

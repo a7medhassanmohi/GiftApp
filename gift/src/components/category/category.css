@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.acd {
+    font-size: 35px;
+    font-family: verdana;
+    letter-spacing: -7px;
+    color: yellow;
+}
+
+.flowerFont{
+     font-family: 'Indie Flower', cursive;;
+}
+
+.social{
+    position: absolute;
+     bottom: 0; 
+    opacity: 0;
+    /* transform: translate(0%,-100%); */
+    transition: bottom 1s , opacity 1s;
+
+}
+.show-icons:hover  .social{
+    opacity: 1;
+    /* transform: translate(0%,-300%); */
+    bottom: 50%;
+
+}
+.social-i{
+    text-align: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 24px;
+    border-color: blue;
+    border-style: solid;
+    display: inline-block;
+    margin: 0 3px;
+    cursor: pointer;
+}

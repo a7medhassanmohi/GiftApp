@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+body{
+    font-family: raleway,sans-serif !important;
+}
+/* ================== PRODUCT DETAILS SECTION ================= */
+/* 1- ================ Nav and social icons ================ */
+#wrapper, #additional, #bestSales{
+    background-color: rgb(249, 243, 243);
+}
+
+#path a, #path span, #details a{
+    text-decoration: none;
+    color:#777;
+    font-size:.92em;
+}
+
+#path a{
+    cursor: pointer;
+}
+#path a:hover, .icons i:hover{
+    color:#d74704;
+}
+#social-icons span, .icons i{
+    color:#2c3651
+}
+.icons i{
+    cursor:pointer;
+}
+.name-w-sep{
+    font-size: 50px;
+    font-family: lora,serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #2c3651;
+    line-height: 1.6 !important;
+}
+.separator .name-w-sep::before {
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:40%;
+    background-image: url("https://amour.beautheme.com/wp-content/themes/amour/asset/images/icon/bg-h2-1.png");
+    background-repeat: repeat-x;
+    /* background-color: #000; */
+    height:7px;
+
+    width: 70px;
+    /* text-align: center; */
+}
+
+#details a{
+    font-size:12px;
+}
+
+#product-info .container{
+    position:relative;
+    
+}
+#product-info .container::before{
+    content: "";
+    position: absolute;
+    bottom:0;
+    left:auto;
+    /* right:auto; */
+    background-image: url("https://amour.beautheme.com/wp-content/themes/amour/asset/images/icon/bg-h2-1.png");
+    background-repeat: repeat-x;
+    height:7px;
+    width: 100%;
+}
+
+#details p{
+    color:#777;
+    font-size:.9em;
+}
+#wishlist p{
+    color:#d74704;
+    font-size:16px;
+    font-family: raleway,sans-serif;
+}
+
+.checked{
+    color:#d74704;
+}
+
+#best-h{
+    position: relative;
+    font-size: 22px;
+    font-family: arnopro-italic;
+}
+#best-h::before, #best-h::after{
+    content: "";
+    position: absolute;
+    bottom:30%;
+    background-image: url("https://amour.beautheme.com/wp-content/themes/amour/asset/images/icon/bg-h2-1.png");
+    background-repeat: repeat-x;
+    height:7px;
+    width:37%;
+}
+
+#best-h::before{
+    left:8%;
+    
+}
+#best-h::after{
+    right: 8%;
+}
+
+#desc-tabs{
+    list-style: none;
+}
+
+#additional li div{
+    text-decoration: none;
+    color:#777;
+    font-weight: 700;
+    font-size: 12px;
+}
+/* .active{
+    color: #d74704;
+
+} */
+
+#additional li div{
+    /* color:#d74704; */
+    cursor:pointer;
+}
+
+.active-content{
+    display:block;
+}
+
+.active-tabs{
+    color: #d74704;
+}
+
+.content{
+    display:none;
+}

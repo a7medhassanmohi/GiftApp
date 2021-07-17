@@ -1,13 +1,41 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* For active navbar links */
+a.active {
+  color: #d74704 !important;
+  font-weight: bold !important;
+}
+/* For active special category buttons */
+.selected_gallery,
+.list_gallery:hover {
+  background-color: var(--mainColor) !important;
+  color: var(--whiteColor) !important;
+  font-family: arno-pro, serif !important;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 1.3px !important;
+}
+.list_gallery {
+  font-family: arno-pro, serif !important;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 22px;
+  letter-spacing: 1.3px !important;
+}
+@media (max-width: 767px) {
+  .selected_gallery,
+  .list_gallery:hover {
+    font-size: 18px;
+  }
+  .list_gallery {
+    font-size: 18px;
+  }
 }

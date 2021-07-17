@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../assets/logo_amour_ft.png";
+import logo from "../../images/logo_amour_ft.png";
 
 function ContactPage() {
   return (

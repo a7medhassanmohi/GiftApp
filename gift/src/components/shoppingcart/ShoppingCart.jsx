@@ -1,5 +1,5 @@
 import React from "react";
-import shopingimd from "../../../assets/1-800x900.jpg";
+import shoppingImd from '../../images/1-800x900.jpg'
 
 function ShoppingCart() {
   return (
@@ -13,7 +13,7 @@ function ShoppingCart() {
         </div>
         <div className="shopping__item">
           <div className="shopping__item__info">
-            <img src={shopingimd} alt="" className="img-fluid" />
+            <img src={shoppingImd} alt="" className="img-fluid" />
             <h5>Smart Watch</h5>
           </div>
           <h6>$40.00</h6>
@@ -23,7 +23,7 @@ function ShoppingCart() {
         </div>
         <div className="shopping__item">
           <div className="shopping__item__info">
-            <img src={shopingimd} alt="" className="img-fluid" />
+            <img src={shoppingImd} alt="" className="img-fluid" />
             <h5>Smart Watch</h5>
           </div>
           <h6>$40.00</h6>

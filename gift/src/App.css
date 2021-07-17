@@ -1,231 +1,38 @@
-.contact__ {
-    background-color: #f9f3f3;
-    overflow: auto;
-    height: 100vh;
+.App {
+  text-align: center;
 }
 
-.mapwraper {
-    position: relative;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-.form__ {
-    position: absolute;
-    top: -30px;
-    right: -50px;
-    width: 350px;
-    height: 700px;
-    background-color: white;
-    box-shadow: 1px 0px 18px -4px #d8d0d0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
-.form__ img {}
-
-.form__ p {
-    font-size: 24px;
-    text-align: center;
-    margin: 10px;
-    font-weight: 300;
-    line-height: 1.4;
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.form__ form {
-    width: 100%;
+.App-link {
+  color: #61dafb;
 }
 
-.form__wraper {
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form__ form input {
-    outline: none;
-    border: none;
-    border-top: 1px solid #e2dbdb;
-    display: block;
-    width: 100%;
-    margin: 10px auto;
-    height: 57px;
-}
-
-.form__ form textarea {
-    outline: none;
-    border: none;
-    border-top: 1px solid #e2dbdb;
-    border-bottom: 1px solid #e2dbdb;
-    display: block;
-    width: 100%;
-    margin: 10px auto;
-}
-
-.form__ form button {
-    border: none;
-    outline: none;
-    display: block;
-    margin-left: auto;
-    padding: 12px 22px;
-    margin-top: 15px;
-    background-color: #2c3651;
-    color: white;
-    font-size: 15px;
-    font-weight: 100;
-}
-
-@media screen and (max-width:780px) {
-    .form__ {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: auto;
-        margin: 30px 0;
-    }
-}
-
-/* shoping cart */
-
-.shopping__cart__cont {
-    box-shadow: 1px 1px 14px -3px #b3b1b1;
-    padding: 30px;
-    border-radius: 15px;
-    margin: 20px 0;
-}
-
-.shopping__cart {
-    background-color: #f9f3f3;
-    min-height: 100vh;
-    overflow: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.shopping__item__titlte {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.shopping__item__titlte h6:nth-child(1) {
-    width: 40%;
-}
-
-.shopping__item__titlte h6:nth-child(2) {
-    width: 10%;
-}
-
-.shopping__item__titlte h6:nth-child(3) {
-    width: 20%;
-}
-
-.shopping__item__titlte h6:nth-child(4) {
-    width: 20%;
-}
-
-.shopping__item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid #d8d0d0;
-    border-bottom: 1px solid #d8d0d0;
-    height: 150px;
-    overflow: hidden;
-}
-
-.shopping__item__info {
-    width: 40%;
-    display: flex;
-    align-items: center;
-}
-
-.shopping__item__info img {
-    width: 40%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.shopping__item h6 {
-    width: 10%;
-}
-
-.shopping__item input {
-    width: 20%;
-}
-
-.shopping__item h4 {
-    width: 20%;
-    text-align: center;
-}
-
-.shpopping__btn {
-    margin: 20px 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.shpopping__btn button {
-    display: block;
-    border: none;
-    outline: none;
-    padding: 12px 12px;
-    background-color: white;
-    color: black;
-    font-size: 15px;
-    font-weight: 100;
-    margin-right: 5px;
-    box-shadow: 1px 1px 11px -5px #868383;
-    cursor: pointer;
-}
-
-.shpopping__btn button.contiueshopp {
-    margin-right: auto;
-    background-color: #2c3651;
-    color: white;
-}
-
-@media screen and (max-width:742px) {
-    .shopping__item__titlte {
-        display: none;
-    }
-    .shopping__item {
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-        align-items: center;
-        border-top: none;
-        margin: 10px;
-    }
-    .shopping__item h6 {
-        font-size: 17px;
-        font-weight: 100;
-        margin: 5px 0 20px;
-    }
-    .shopping__item input {
-        margin: 0 0 20px;
-    }
-    .shopping__item h4 {
-        font-size: 23px;
-        font-weight: 700;
-        margin: 0 0 20px;
-    }
-    .shopping__item__info {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .shopping__item__info img {
-        width: 80%;
-        object-fit: cover;
-    }
-    .shopping__item__info h5 {
-        font-size: 23px;
-        font-weight: 700;
-        margin: 10px 0;
-    }
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

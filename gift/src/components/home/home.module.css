@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300&display=swap");
+
+:root {
+  --mainColor: #d74704;
+  --secondColor: #2c3651;
+  --whiteColor: #fff;
+  --paragraphColor: #333;
+  --footerHeader: #ca9a47;
+  --footerText: #8b5434;
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  letter-spacing: 1px;
+}
+
+/* Section Address */
+.section_address {
+  font-family: arno-pro, serif !important;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  position: relative;
+  margin-bottom: 32px;
+}
+.section_address::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  bottom: 35px;
+  background-color: var(--mainColor);
+  border-radius: 50px;
+}
+/* ==========Start HightLight Section========= */
+.hightLight {
+  background-color: #f9f3f3;
+}
+/* Price Icon  */
+.price {
+  position: absolute;
+  top: 60px;
+  left: -15px;
+  z-index: 1;
+  width: 70px;
+  height: 70px;
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.price h2 {
+  font-family: arno-pro, serif !important;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 33px;
+  margin: 0;
+}
+/* Card Address */
+.card_address {
+  font-family: arno-pro, serif !important;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 60px;
+  position: relative;
+  color: var(--secondColor);
+  padding-bottom: 15px;
+}
+.card_address::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 2px;
+  bottom: 0px;
+  background-color: var(--mainColor);
+  border-radius: 50px;
+}
+/* Main Paragraph */
+.mainP {
+  color: var(--paragraphColor) !important;
+  font-size: 22px !important;
+  font-family: arno-pro, serif !important;
+}
+/* Quantity Form  */
+.q_form_control {
+  border: none;
+}
+.q_form_control:focus {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.add_cart,
+.add_cart:hover {
+  background-color: var(--secondColor);
+  color: var(--whiteColor);
+}
+/* Product Total Price Form  */
+.total {
+  color: var(--secondColor);
+  font-size: 14px;
+  width: 80%;
+}
+.total_form_control {
+  width: 45%;
+  margin: auto;
+  border: none;
+}
+.total_form_control:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+/* Add To Wishlist  */
+.wishlist a {
+  color: var(--secondColor);
+  font-size: 15px;
+  font-family: arno-pro, serif !important;
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: none;
+}
+/* ==========End HightLight Section========= */
+
+/* ==========Start Special Category && Best Seller Section========= */
+.gallery,
+.best {
+  background-color: #f9f3f3;
+}
+.gallery_card,
+.best_card {
+  background-color: transparent !important;
+}
+.gallery_card img {
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+.gallery_card_body h5,
+.best_card_body h5 {
+  font-size: 30px;
+  font-family: arno-pro, serif !important;
+  font-weight: bold;
+  color: var(--paragraphColor);
+  position: relative;
+  padding: 5px 0px;
+}
+.best_card_body h5 {
+  font-size: 20px;
+}
+.gallery_card_body h5::after,
+.best_card_body h5::after {
+  content: " ";
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  background-color: var(--secondColor);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gallery_card_body p:first-of-type,
+.best_card_body p:first-of-type {
+  font-size: 18px;
+  font-family: arno-pro, serif !important;
+  color: var(--paragraphColor);
+  margin: 0 auto;
+}
+.gallery_card_body p:last-of-type,
+.best_card_body p:last-of-type {
+  font-size: 34px;
+  font-weight: bold;
+  font-family: arno-pro, serif !important;
+  color: var(--mainColor);
+}
+.back {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.back_wishlist,
+.back_view {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  transition: all 0.5s;
+  opacity: 0.1;
+}
+.back_wishlist:hover,
+.back_view:hover {
+  opacity: 1;
+}
+.back_wishlist i,
+.back_view i {
+  color: var(--whiteColor) !important;
+  font-size: 23px !important;
+}
+
+/* ==========End Special Category && Best Seller Section========= */
+
+/* =========Start Sale Section=========== */
+.sale_headers {
+  font-size: 28px;
+  font-family: arno-pro, serif !important;
+  font-style: italic;
+  color: var(--paragraphColor);
+  position: relative;
+}
+.sale h5 {
+  font-size: 19px;
+  font-family: arno-pro, serif !important;
+  font-weight: bold;
+  color: var(--paragraphColor);
+  position: relative;
+  padding: 5px 0px;
+}
+.sale h5::after {
+  content: " ";
+  position: absolute;
+  width: 100px;
+  height: 1px;
+  background-color: var(--secondColor);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.sale p:first-of-type {
+  font-size: 14px;
+  font-family: arno-pro, serif !important;
+  color: var(--paragraphColor);
+  margin: 0 auto;
+}
+.sale p:last-of-type {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: arno-pro, serif !important;
+  color: var(--mainColor);
+}
+/* =========End Sale Section=========== */
+
+/* =======Start Footer======== */
+footer {
+  background-color: #652428;
+  padding-top: 60px;
+}
+footer div div > div:not(:last-of-type) {
+  border-right: 1px solid #5e1c26;
+}
+footer div div div h4 {
+  color: var(--footerHeader);
+  font-size: 24px;
+  font-family: arno-pro, serif !important;
+  margin-bottom: 15px;
+}
+footer div div div:first-of-type p {
+  color: var(--footerText);
+  font-size: 13px;
+  padding: 15px 25px;
+}
+footer div div div:first-of-type h5 {
+  color: var(--footerText);
+  font-size: 23px;
+}
+footer div div div:first-of-type h4 {
+  color: var(--footerText);
+  font-size: 20px;
+}
+footer div div div:nth-of-type(2) ul li a,
+footer div div div:last-of-type ul li {
+  color: var(--footerText);
+  font-size: 13px;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+footer form input {
+  padding: 12px 8px;
+  outline: none;
+  caret-color: var(--footerHeader);
+}
+footer form button {
+  border-radius: 0px !important;
+}
+footer div div div:nth-of-type(3) ul li a {
+  color: var(--footerHeader);
+  font-size: 18px;
+}
+footer div div div:nth-of-type(3) ul li a:hover {
+  color: var(--whiteColor);
+}
+
+footer .end {
+  margin-top: 60px;
+  border-top: 1px solid #5e1c26;
+}
+footer .end p {
+  color: var(--footerText);
+  font-size: 17px;
+  padding: 20px 0;
+  margin: 0;
+}
+/* =======End Footer======== */
+
+/* ==========MEDIA QUERY FOR RESPONSIVE========= */
+/* =====For Large Screen=====  */
+@media (min-width: 992px) {
+  .header {
+    margin-top: 109px;
+  }
+}
+/* =====For Medium Screen=====  */
+@media (max-width: 992px) {
+  .header {
+    margin-top: 76px;
+  }
+  .total {
+    width: 90%;
+  }
+  footer div div > div {
+    border-right: 2px solid #5e1c26;
+  }
+}
+/* =====For Small Screen And Mobile=====  */
+@media (max-width: 768px) {
+  footer div div > div {
+    border-right: none !important;
+  }
+}
